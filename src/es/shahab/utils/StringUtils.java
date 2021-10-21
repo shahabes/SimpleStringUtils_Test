@@ -4,10 +4,14 @@ public class StringUtils {
 
     private String mainString;
 
-
     public StringUtils(String mainString){
         this.mainString = mainString;
     }
+
+    public void setMainString(String mainString) {
+        this.mainString = mainString;
+    }
+
 
     public int find(String searchString){
 
@@ -34,9 +38,7 @@ public class StringUtils {
                         isFound = false;
 
                         break;
-
                     }
-
                 }
 
                 if(isFound)
@@ -59,7 +61,6 @@ public class StringUtils {
 
         if(mainString.length() < searchString.length())
             isSearchSizeValid = false;
-
 
         return isSearchSizeValid;
     }
